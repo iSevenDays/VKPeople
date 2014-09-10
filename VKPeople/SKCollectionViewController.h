@@ -10,10 +10,10 @@
 #import "SKUser.h"
 
 
-@interface SKCollectionViewController : NSViewController{
+@interface SKCollectionViewController : NSViewController<SKUsersSearchProtocol>{
     IBOutlet NSArrayController *arrayController;
 }
 
-@property (strong) NSMutableArray *users;
+@property (nonatomic, strong) NSArray *users;
 
 @end

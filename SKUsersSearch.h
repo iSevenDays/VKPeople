@@ -8,16 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol SKUsersSearchProtocol;
 
 @interface SKUsersSearch : NSObject <SKSearchSettingsObserverProtocol>
 
 - (void)reset;
 - (void)searchWithSuccessBlock:(SKSuccessBlock)successBlock errorBlock:(SKErrorBlock)errorBlock;
 
-/// contains SKUserModel instances
-@property (nonatomic, strong) NSArray* users;
+/// contains SKUser instances
+@property (nonatomic, strong) NSArray*      users;
+@property (nonatomic, assign) NSUInteger    offset;
+@property (nonatomic, assign) NSUInteger    countPerRequest;
+@property (nonatomic, weak)   id<SKUsersSearchProtocol> delegate;
 
-@property (nonatomic, assign) NSUInteger      offset;
-@property (nonatomic, assign) NSUInteger      countPerRequest;
+@end
+
+@protocol SKUsersSearchProtocol <NSObject>
+
+- (void)usersChanged;
 
 @end

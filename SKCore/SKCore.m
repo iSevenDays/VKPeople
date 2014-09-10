@@ -50,5 +50,4 @@
     return searchSettingsObserver;
 }
 
-
 @end

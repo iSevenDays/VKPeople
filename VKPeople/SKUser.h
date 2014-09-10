@@ -20,6 +20,8 @@
 /// 1 = woman, 2 = man, 0 = undefined
 @property (nonatomic, assign) NSInteger    sex;
 
+@property (nonatomic, strong) SKImage<Ignore>*      previewImage;
+
 - (NSString *)domainFull;
 - (NSString *)fullName;
 

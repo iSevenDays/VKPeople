@@ -38,6 +38,12 @@
         for( NSDictionary *dic in responseData ){
             SKUser *vkUser = [[SKUser alloc] initWithDictionary:dic error:&error];
             if( vkUser != nil ){
+                
+                dispatch_async(dispatch_queue_create("getAsyncImage", NULL), ^{
+                    SKImage *image = [[SKImage alloc] initWithContentsOfURL:[NSURL URLWithString:vkUser.photoMax]];
+                    vkUser.previewImage = image;
+                });
+                
                 [users addObject:vkUser];
             }
             else{
@@ -46,13 +52,16 @@
         }
         
         self.users = [users copy];
+        if( [self.delegate respondsToSelector:@selector(usersChanged)] ){
+            [self.delegate usersChanged];
+        }
     } errorBlock:^(SKResponse *response) {
         DLog(@"%@", response.error);
     }];
 }
 
 - (void)reset{
-    self.countPerRequest = 30;
+    self.countPerRequest = 100;
     self.offset = 0;
     self.users = [NSArray array];
 }

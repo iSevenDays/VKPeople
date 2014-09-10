@@ -13,6 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <viewController id="SLj-5p-39F" customClass="SKSearchSettingsViewController">
             <connections>
+                <outlet property="autoLoadSearchResults" destination="0BR-y7-hCx" id="tBI-ud-NLx"/>
                 <outlet property="view" destination="I9d-Fd-tj4" id="7wq-pJ-ej5"/>
             </connections>
         </viewController>
@@ -25,6 +26,7 @@
         <arrayController objectClassName="SKUser" editable="NO" id="TQS-Sn-UN4">
             <declaredKeys>
                 <string>photoMax</string>
+                <string>previewImage</string>
             </declaredKeys>
             <connections>
                 <binding destination="4x9-Kx-atg" name="contentArray" keyPath="users" id="51B-iI-brv"/>
@@ -869,6 +871,13 @@
                                             <binding destination="SLj-5p-39F" name="value" keyPath="self.settings.ageTo" id="okR-yl-Hzg"/>
                                         </connections>
                                     </textField>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0BR-y7-hCx">
+                                        <rect key="frame" x="7" y="18" width="108" height="18"/>
+                                        <buttonCell key="cell" type="check" title="автозагрузка" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="B1s-e8-pKV">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="P6N-gM-Z7g" firstAttribute="top" secondItem="Nyc-2C-tY2" secondAttribute="bottom" constant="36" id="0iT-h4-cZK"/>
@@ -913,22 +922,49 @@
                 </constraints>
             </view>
         </window>
-        <view id="aby-v3-5QE">
+        <view wantsLayer="YES" id="aby-v3-5QE">
             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J54-pJ-quB">
-                    <rect key="frame" x="18" y="63" width="38" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="ua9-Kl-xP6">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8jl-T9-A47">
+                    <rect key="frame" x="-3" y="-3" width="106" height="106"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="Qfl-El-P5l"/>
                     <connections>
-                        <binding destination="PVO-eC-tVS" name="value" keyPath="representedObject.photoMax" id="Agl-Ki-AMb"/>
+                        <binding destination="PVO-eC-tVS" name="value" keyPath="representedObject.previewImage" id="pb2-jS-6lF"/>
+                    </connections>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J54-pJ-quB">
+                    <rect key="frame" x="4" y="0.0" width="92" height="17"/>
+                    <shadow key="shadow" blurRadius="1">
+                        <size key="offset" width="1" height="1"/>
+                        <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </shadow>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="fullName" id="ua9-Kl-xP6" userLabel="Labelling">
+                        <font key="font" size="11" name="EuphemiaUCAS"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <binding destination="PVO-eC-tVS" name="value" keyPath="representedObject.fullName" id="RpH-uW-Sp0"/>
                     </connections>
                 </textField>
             </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8jl-T9-A47" secondAttribute="trailing" id="2jr-N3-hYE"/>
+                <constraint firstItem="8jl-T9-A47" firstAttribute="top" secondItem="aby-v3-5QE" secondAttribute="top" id="De9-SH-XLV"/>
+                <constraint firstItem="8jl-T9-A47" firstAttribute="leading" secondItem="aby-v3-5QE" secondAttribute="leading" id="VpO-6X-FC1"/>
+                <constraint firstAttribute="bottom" secondItem="8jl-T9-A47" secondAttribute="bottom" id="hVH-ay-qmA"/>
+            </constraints>
+            <point key="canvasLocation" x="130" y="266"/>
         </view>
         <userDefaultsController representsSharedInstance="YES" id="jme-df-HV6"/>
         <collectionViewItem id="PVO-eC-tVS">

@@ -10,8 +10,9 @@
 #import "SKCore.h"
 
 @protocol SKSearchSettingsProtocol;
-@interface SKSearchSettingsViewController : NSViewController
-
+@interface SKSearchSettingsViewController : NSViewController{
+    IBOutlet NSButton *autoLoadSearchResults;
+}
 @property(nonatomic, assign) SKSearchSettings* settings;
 @property(nonatomic, weak) id<SKSearchSettingsProtocol> delegate;
 

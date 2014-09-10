@@ -20,17 +20,21 @@
     return [SKCore searchSettings];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    SKUser *user = [[SKUser alloc] init];
-    user.firstName = @"ahha";
-    user.lastName = @"last";
-    user.photoMax = @"photo max";
-    _users = [NSMutableArray array];
-    [arrayController addObject:user];
-    
-    
-    NSLog(@"%@", self.view);
+- (NSArray *)users{
+    return [[SKCore usersSearch] users];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [SKCore usersSearch].delegate = self;
+}
+
+#pragma mark -
+#pragma mark SKUsersSearchProtocol
+
+- (void)usersChanged{
+    DLog(@"");
+    [arrayController addObjects:self.users];
+    [arrayController rearrangeObjects];
+}
 @end
