@@ -169,8 +169,6 @@
 			children = (
 				14162FFE19BF01C500D5F4E6 /* SKCore.h */,
 				14162FFF19BF01C500D5F4E6 /* SKCore.m */,
-				14162FFB19BF018A00D5F4E6 /* SKResponse.h */,
-				14162FFC19BF018A00D5F4E6 /* SKResponse.m */,
 			);
 			name = SKCore;
 			sourceTree = "<group>";
@@ -181,6 +179,44 @@
 				14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */,
 			);
 			name = SKSettings;
+			sourceTree = "<group>";
+		};
+		1450ED5719C0429100A89D82 /* SKAuth */ = {
+			isa = PBXGroup;
+			children = (
+				147D831919AE225A00B0E3AE /* SKAuth.h */,
+				147D831A19AE225A00B0E3AE /* SKAuth.m */,
+			);
+			name = SKAuth;
+			sourceTree = "<group>";
+		};
+		1450ED5819C0429B00A89D82 /* SKNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				14162FFB19BF018A00D5F4E6 /* SKResponse.h */,
+				14162FFC19BF018A00D5F4E6 /* SKResponse.m */,
+				14F128A219AF56D70028F807 /* SKRequest.h */,
+				14F128A319AF56D70028F807 /* SKRequest.m */,
+			);
+			name = SKNetwork;
+			sourceTree = "<group>";
+		};
+		1450ED5919C042A600A89D82 /* SKUsersSearch */ = {
+			isa = PBXGroup;
+			children = (
+				147D831C19AE306300B0E3AE /* SKUsersSearch.h */,
+				147D831D19AE306300B0E3AE /* SKUsersSearch.m */,
+			);
+			name = SKUsersSearch;
+			sourceTree = "<group>";
+		};
+		1450ED5A19C042B700A89D82 /* SKObservers */ = {
+			isa = PBXGroup;
+			children = (
+				14162FEB19BDCFD700D5F4E6 /* SKSearchSettingsObserver.h */,
+				14162FEC19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m */,
+			);
+			name = SKObservers;
 			sourceTree = "<group>";
 		};
 		146CACA919AF175F000BA226 /* Controller */ = {
@@ -303,15 +339,11 @@
 		147D831819AE117D00B0E3AE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1450ED5719C0429100A89D82 /* SKAuth */,
 				14162FFA19BF016B00D5F4E6 /* SKCore */,
-				147D831919AE225A00B0E3AE /* SKAuth.h */,
-				147D831A19AE225A00B0E3AE /* SKAuth.m */,
-				147D831C19AE306300B0E3AE /* SKUsersSearch.h */,
-				147D831D19AE306300B0E3AE /* SKUsersSearch.m */,
-				14F128A219AF56D70028F807 /* SKRequest.h */,
-				14F128A319AF56D70028F807 /* SKRequest.m */,
-				14162FEB19BDCFD700D5F4E6 /* SKSearchSettingsObserver.h */,
-				14162FEC19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m */,
+				1450ED5A19C042B700A89D82 /* SKObservers */,
+				1450ED5919C042A600A89D82 /* SKUsersSearch */,
+				1450ED5819C0429B00A89D82 /* SKNetwork */,
 			);
 			name = Services;
 			path = ..;
