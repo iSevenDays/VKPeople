@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-typedef void (^SKErrorBlock)(NSError *error);
-typedef void (^SKSuccessBlock)();
+
 @interface SKAuth : NSObject
 
-@property(readonly) NSString* access_token;
+- (NSURLRequest *)authorizeWithLogin:(NSString *)login password:(NSString *)password scopes:(NSString *)scopes clientID:(NSString *)clientID clientSecret:(NSString *)clientSecret successBlock:(void (^)(SKResponse *response))successBlock errorBlock:(SKErrorBlock)errorBlock;
 
-+ (instancetype)sharedInstance;
 
-- (void)authorizeWithLogin:(NSString *)login password:(NSString *)password scopes:(NSString *)scopes clientID:(NSString *)clientID clientSecret:(NSString *)clientSecret SKSuccessBlock:(SKSuccessBlock)successBlock SKErrorBlock:(SKErrorBlock)errorBlock;
+@property(readonly) NSString* accessToken;
+
 @end
