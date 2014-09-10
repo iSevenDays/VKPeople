@@ -1,0 +1,32 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - JSONModel (1.0.1)
+  - Kiwi (2.3.0)
+  - OHHTTPStubs (3.1.5):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/Core (3.1.5)
+  - SBJson (4.0.1)
+
+DEPENDENCIES:
+  - BlocksKit
+  - JSONModel
+  - Kiwi
+  - OHHTTPStubs
+  - SBJson (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  JSONModel: 634100aaacbd89811bc8a03da209356e5989c569
+  Kiwi: 54bece5b35564d9b8e03c608d926f1a22fcfc589
+  OHHTTPStubs: c1e362552b71b81e1deb7a80f44c51585b946c43
+  SBJson: d71212c078abf4679d54b0d0565260c474e46235
+
+COCOAPODS: 0.33.1
