@@ -54,6 +54,7 @@
 - (void)reset{
     self.countPerRequest = 30;
     self.offset = 0;
+    self.users = [NSArray array];
 }
 
 - (void)loadCounties{

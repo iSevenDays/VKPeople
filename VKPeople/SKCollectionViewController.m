@@ -16,18 +16,21 @@
 {
 }
 
-- (NSArray *)users{
-    return [[SKCore usersSearch] users];
-}
-
 - (SKSearchSettings *)settings{
     return [SKCore searchSettings];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    SKUser *user = [[SKUser alloc] init];
+    user.firstName = @"ahha";
+    user.lastName = @"last";
+    user.photoMax = @"photo max";
+    _users = [NSMutableArray array];
+    [arrayController addObject:user];
+    
+    
     NSLog(@"%@", self.view);
-
 }
 
 @end

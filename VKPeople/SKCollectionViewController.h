@@ -7,11 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SKUser.h"
+
 
 @interface SKCollectionViewController : NSViewController{
     IBOutlet NSArrayController *arrayController;
 }
 
-@property (nonatomic, strong) NSArray *users;
+@property (strong) NSMutableArray *users;
 
 @end

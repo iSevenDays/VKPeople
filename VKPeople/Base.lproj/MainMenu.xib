@@ -18,16 +18,16 @@
         </viewController>
         <viewController id="4x9-Kx-atg" customClass="SKCollectionViewController">
             <connections>
-                <outlet property="arrayController" destination="TQS-Sn-UN4" id="pqN-wC-i4z"/>
+                <outlet property="arrayController" destination="TQS-Sn-UN4" id="wqM-Cc-awg"/>
+                <outlet property="view" destination="zbU-qb-heY" id="Q4p-ex-1Sq"/>
             </connections>
         </viewController>
-        <arrayController objectClassName="SKUser" id="TQS-Sn-UN4">
+        <arrayController objectClassName="SKUser" editable="NO" id="TQS-Sn-UN4">
             <declaredKeys>
-                <string>fullName</string>
                 <string>photoMax</string>
             </declaredKeys>
             <connections>
-                <binding destination="4x9-Kx-atg" name="contentArray" keyPath="users" id="7G2-wO-Ivl"/>
+                <binding destination="4x9-Kx-atg" name="contentArray" keyPath="users" id="51B-iI-brv"/>
             </connections>
         </arrayController>
         <customObject id="Voe-Tx-rLC" customClass="SKAppDelegate">
@@ -684,9 +684,6 @@
                     </menu>
                 </menuItem>
             </items>
-            <connections>
-                <outlet property="delegate" destination="4x9-Kx-atg" id="WSg-xB-sFI"/>
-            </connections>
         </menu>
         <window title="VKPeople" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -707,15 +704,16 @@
                                     <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiy-CO-zTa">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="360"/>
                                         <clipView key="contentView" id="VYP-5v-CO7">
-                                            <rect key="frame" x="1" y="1" width="248" height="158"/>
+                                            <rect key="frame" x="1" y="1" width="313" height="358"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <collectionView id="zbU-qb-heY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="358"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <connections>
-                                                        <binding destination="TQS-Sn-UN4" name="content" keyPath="arrangedObjects" id="VWu-DN-krC"/>
+                                                        <binding destination="TQS-Sn-UN4" name="content" keyPath="arrangedObjects" id="9Gx-53-VE0"/>
+                                                        <outlet property="itemPrototype" destination="PVO-eC-tVS" id="jds-1j-CLV"/>
                                                     </connections>
                                                 </collectionView>
                                             </subviews>
@@ -926,9 +924,17 @@
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <binding destination="PVO-eC-tVS" name="value" keyPath="representedObject.photoMax" id="Agl-Ki-AMb"/>
+                    </connections>
                 </textField>
             </subviews>
-            <point key="canvasLocation" x="102" y="259"/>
         </view>
+        <userDefaultsController representsSharedInstance="YES" id="jme-df-HV6"/>
+        <collectionViewItem id="PVO-eC-tVS">
+            <connections>
+                <outlet property="view" destination="aby-v3-5QE" id="LRj-qV-tGS"/>
+            </connections>
+        </collectionViewItem>
     </objects>
 </document>
