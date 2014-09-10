@@ -6,4 +6,18 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+    #import "PlatformAdapter.h"
+#import "NSDictionary+NSURL.h"
+#import "NSDictionary+SBJSON.h"
+#import "SKResponse.h"
+#import "SKRequest.h"
+#import "SKCore.h"
+
+#ifdef DEBUG
+#    define DLog(...) NSLog(__VA_ARGS__)
+#else
+#    define DLog(...) /* */
+#endif
+#define ALog(...) NSLog(__VA_ARGS__)
+
 #endif

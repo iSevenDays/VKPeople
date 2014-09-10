@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3B03E1206E4D0CB6350503 /* libPods-VKPeopleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE8004200DA48928E5E31D7 /* libPods-VKPeopleTests.a */; };
+		14162FED19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FEC19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m */; };
+		14162FF619BEF5F900D5F4E6 /* SKAuth_authorizeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FF519BEF5F900D5F4E6 /* SKAuth_authorizeSpec.m */; };
+		14162FF919BEFCF600D5F4E6 /* auth_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 14162FF819BEFCF600D5F4E6 /* auth_response.json */; };
+		14162FFD19BF018A00D5F4E6 /* SKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FFC19BF018A00D5F4E6 /* SKResponse.m */; };
+		1416300019BF01C500D5F4E6 /* SKCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FFF19BF01C500D5F4E6 /* SKCore.m */; };
+		14281AA019BF54CE00C85B81 /* SKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14281A9E19BF54CE00C85B81 /* SKCollectionViewController.m */; };
+		14281AA519BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */; };
+		146CACA819AF175A000BA226 /* SKSearchSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146CACA719AF175A000BA226 /* SKSearchSettingsViewController.m */; };
+		146CACAC19AF1C4D000BA226 /* SKSearchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 146CACAB19AF1C4D000BA226 /* SKSearchSettings.m */; };
 		147D824819ADFDCF00B0E3AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147D824719ADFDCF00B0E3AE /* Cocoa.framework */; };
 		147D825219ADFDCF00B0E3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 147D825019ADFDCF00B0E3AE /* InfoPlist.strings */; };
 		147D825419ADFDCF00B0E3AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D825319ADFDCF00B0E3AE /* main.m */; };
@@ -17,7 +27,14 @@
 		147D826719ADFDCF00B0E3AE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147D826619ADFDCF00B0E3AE /* XCTest.framework */; };
 		147D826819ADFDCF00B0E3AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147D824719ADFDCF00B0E3AE /* Cocoa.framework */; };
 		147D827019ADFDCF00B0E3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 147D826E19ADFDCF00B0E3AE /* InfoPlist.strings */; };
-		147D827219ADFDCF00B0E3AE /* VKPeopleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D827119ADFDCF00B0E3AE /* VKPeopleTests.m */; };
+		147D831B19AE225A00B0E3AE /* SKAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D831A19AE225A00B0E3AE /* SKAuth.m */; };
+		147D831E19AE306300B0E3AE /* SKUsersSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D831D19AE306300B0E3AE /* SKUsersSearch.m */; };
+		147D832419AE33E500B0E3AE /* SKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D832319AE33E500B0E3AE /* SKUser.m */; };
+		14AEDEF119B0A59F000AFB48 /* NSDictionary+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEDEF019B0A59F000AFB48 /* NSDictionary+SBJSON.m */; };
+		14F128A119AF351E0028F807 /* SKFileFieldFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F128A019AF351E0028F807 /* SKFileFieldFormatter.m */; };
+		14F128A419AF56D70028F807 /* SKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F128A319AF56D70028F807 /* SKRequest.m */; };
+		14F128A819AF5C720028F807 /* NSDictionary+NSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F128A719AF5C720028F807 /* NSDictionary+NSURL.m */; };
+		8E536CB90E7E4CC39BCF242E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31ABEC3A2DC24D71BD5E44E8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14162FEB19BDCFD700D5F4E6 /* SKSearchSettingsObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSearchSettingsObserver.h; sourceTree = "<group>"; };
+		14162FEC19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSearchSettingsObserver.m; sourceTree = "<group>"; };
+		14162FF519BEF5F900D5F4E6 /* SKAuth_authorizeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAuth_authorizeSpec.m; sourceTree = "<group>"; };
+		14162FF819BEFCF600D5F4E6 /* auth_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = auth_response.json; path = test_files/auth_response.json; sourceTree = "<group>"; };
+		14162FFB19BF018A00D5F4E6 /* SKResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKResponse.h; path = SKCore/SKResponse.h; sourceTree = "<group>"; };
+		14162FFC19BF018A00D5F4E6 /* SKResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKResponse.m; path = SKCore/SKResponse.m; sourceTree = "<group>"; };
+		14162FFE19BF01C500D5F4E6 /* SKCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKCore.h; path = SKCore/SKCore.h; sourceTree = "<group>"; };
+		14162FFF19BF01C500D5F4E6 /* SKCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKCore.m; path = SKCore/SKCore.m; sourceTree = "<group>"; };
+		14281A9D19BF54CE00C85B81 /* SKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCollectionViewController.h; sourceTree = "<group>"; };
+		14281A9E19BF54CE00C85B81 /* SKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCollectionViewController.m; sourceTree = "<group>"; };
+		14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKSettings_settingsPropertiesSpec.m; path = SKSettings/SKSettings_settingsPropertiesSpec.m; sourceTree = "<group>"; };
+		146CACA619AF175A000BA226 /* SKSearchSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSearchSettingsViewController.h; sourceTree = "<group>"; };
+		146CACA719AF175A000BA226 /* SKSearchSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSearchSettingsViewController.m; sourceTree = "<group>"; };
+		146CACAA19AF1C4D000BA226 /* SKSearchSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSearchSettings.h; sourceTree = "<group>"; };
+		146CACAB19AF1C4D000BA226 /* SKSearchSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSearchSettings.m; sourceTree = "<group>"; };
 		147D824419ADFDCF00B0E3AE /* VKPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147D824719ADFDCF00B0E3AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		147D824A19ADFDCF00B0E3AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,7 +81,25 @@
 		147D826619ADFDCF00B0E3AE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		147D826D19ADFDCF00B0E3AE /* VKPeopleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VKPeopleTests-Info.plist"; sourceTree = "<group>"; };
 		147D826F19ADFDCF00B0E3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		147D827119ADFDCF00B0E3AE /* VKPeopleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKPeopleTests.m; sourceTree = "<group>"; };
+		147D831319AE051600B0E3AE /* PlatformAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAdapter.h; sourceTree = "<group>"; };
+		147D831919AE225A00B0E3AE /* SKAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAuth.h; sourceTree = "<group>"; };
+		147D831A19AE225A00B0E3AE /* SKAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAuth.m; sourceTree = "<group>"; };
+		147D831C19AE306300B0E3AE /* SKUsersSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKUsersSearch.h; sourceTree = "<group>"; };
+		147D831D19AE306300B0E3AE /* SKUsersSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKUsersSearch.m; sourceTree = "<group>"; };
+		147D832219AE33E500B0E3AE /* SKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKUser.h; sourceTree = "<group>"; };
+		147D832319AE33E500B0E3AE /* SKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKUser.m; sourceTree = "<group>"; };
+		14AEDEEF19B0A59F000AFB48 /* NSDictionary+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SBJSON.h"; path = "../NSDictionary+SBJSON.h"; sourceTree = "<group>"; };
+		14AEDEF019B0A59F000AFB48 /* NSDictionary+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SBJSON.m"; path = "../NSDictionary+SBJSON.m"; sourceTree = "<group>"; };
+		14F1289F19AF351E0028F807 /* SKFileFieldFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFileFieldFormatter.h; sourceTree = "<group>"; };
+		14F128A019AF351E0028F807 /* SKFileFieldFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFileFieldFormatter.m; sourceTree = "<group>"; };
+		14F128A219AF56D70028F807 /* SKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRequest.h; sourceTree = "<group>"; };
+		14F128A319AF56D70028F807 /* SKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRequest.m; sourceTree = "<group>"; };
+		14F128A619AF5C720028F807 /* NSDictionary+NSURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NSURL.h"; sourceTree = "<group>"; };
+		14F128A719AF5C720028F807 /* NSDictionary+NSURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NSURL.m"; sourceTree = "<group>"; };
+		31ABEC3A2DC24D71BD5E44E8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE8004200DA48928E5E31D7 /* libPods-VKPeopleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKPeopleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DA21A983414DEBAD128E3C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		CF56D45609C64C41B5005783 /* Pods-VKPeopleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKPeopleTests.xcconfig"; path = "Pods/Pods-VKPeopleTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				147D824819ADFDCF00B0E3AE /* Cocoa.framework in Frameworks */,
+				8E536CB90E7E4CC39BCF242E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +118,118 @@
 			files = (
 				147D826819ADFDCF00B0E3AE /* Cocoa.framework in Frameworks */,
 				147D826719ADFDCF00B0E3AE /* XCTest.framework in Frameworks */,
+				0F3B03E1206E4D0CB6350503 /* libPods-VKPeopleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14162FF019BEF54500D5F4E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14162FF219BEF55F00D5F4E6 /* SKUser */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		14162FF119BEF54C00D5F4E6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		14162FF219BEF55F00D5F4E6 /* SKUser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SKUser;
+			sourceTree = "<group>";
+		};
+		14162FF319BEF5BE00D5F4E6 /* SKAuth */ = {
+			isa = PBXGroup;
+			children = (
+				14162FF719BEFCD100D5F4E6 /* test_files */,
+				14162FF519BEF5F900D5F4E6 /* SKAuth_authorizeSpec.m */,
+			);
+			path = SKAuth;
+			sourceTree = "<group>";
+		};
+		14162FF719BEFCD100D5F4E6 /* test_files */ = {
+			isa = PBXGroup;
+			children = (
+				14162FF819BEFCF600D5F4E6 /* auth_response.json */,
+			);
+			name = test_files;
+			sourceTree = "<group>";
+		};
+		14162FFA19BF016B00D5F4E6 /* SKCore */ = {
+			isa = PBXGroup;
+			children = (
+				14162FFE19BF01C500D5F4E6 /* SKCore.h */,
+				14162FFF19BF01C500D5F4E6 /* SKCore.m */,
+			);
+			name = SKCore;
+			sourceTree = "<group>";
+		};
+		14281AA219BF5B0100C85B81 /* SKSettings */ = {
+			isa = PBXGroup;
+			children = (
+				14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */,
+			);
+			name = SKSettings;
+			sourceTree = "<group>";
+		};
+		1450ED5719C0429100A89D82 /* SKAuth */ = {
+			isa = PBXGroup;
+			children = (
+				147D831919AE225A00B0E3AE /* SKAuth.h */,
+				147D831A19AE225A00B0E3AE /* SKAuth.m */,
+			);
+			name = SKAuth;
+			sourceTree = "<group>";
+		};
+		1450ED5819C0429B00A89D82 /* SKNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				14162FFB19BF018A00D5F4E6 /* SKResponse.h */,
+				14162FFC19BF018A00D5F4E6 /* SKResponse.m */,
+				14F128A219AF56D70028F807 /* SKRequest.h */,
+				14F128A319AF56D70028F807 /* SKRequest.m */,
+			);
+			name = SKNetwork;
+			sourceTree = "<group>";
+		};
+		1450ED5919C042A600A89D82 /* SKUsersSearch */ = {
+			isa = PBXGroup;
+			children = (
+				147D831C19AE306300B0E3AE /* SKUsersSearch.h */,
+				147D831D19AE306300B0E3AE /* SKUsersSearch.m */,
+			);
+			name = SKUsersSearch;
+			sourceTree = "<group>";
+		};
+		1450ED5A19C042B700A89D82 /* SKObservers */ = {
+			isa = PBXGroup;
+			children = (
+				14162FEB19BDCFD700D5F4E6 /* SKSearchSettingsObserver.h */,
+				14162FEC19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m */,
+			);
+			name = SKObservers;
+			sourceTree = "<group>";
+		};
+		146CACA919AF175F000BA226 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				146CACA619AF175A000BA226 /* SKSearchSettingsViewController.h */,
+				146CACA719AF175A000BA226 /* SKSearchSettingsViewController.m */,
+				14281A9D19BF54CE00C85B81 /* SKCollectionViewController.h */,
+				14281A9E19BF54CE00C85B81 /* SKCollectionViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		147D823B19ADFDCF00B0E3AE = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +237,8 @@
 				147D826B19ADFDCF00B0E3AE /* VKPeopleTests */,
 				147D824619ADFDCF00B0E3AE /* Frameworks */,
 				147D824519ADFDCF00B0E3AE /* Products */,
+				79DA21A983414DEBAD128E3C /* Pods.xcconfig */,
+				CF56D45609C64C41B5005783 /* Pods-VKPeopleTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +257,8 @@
 				147D824719ADFDCF00B0E3AE /* Cocoa.framework */,
 				147D826619ADFDCF00B0E3AE /* XCTest.framework */,
 				147D824919ADFDCF00B0E3AE /* Other Frameworks */,
+				31ABEC3A2DC24D71BD5E44E8 /* libPods.a */,
+				5BE8004200DA48928E5E31D7 /* libPods-VKPeopleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +276,10 @@
 		147D824D19ADFDCF00B0E3AE /* VKPeople */ = {
 			isa = PBXGroup;
 			children = (
+				146CACA919AF175F000BA226 /* Controller */,
+				147D831F19AE30EB00B0E3AE /* Model */,
+				147D831819AE117D00B0E3AE /* Services */,
+				147D831219AE050600B0E3AE /* Helpers */,
 				147D825919ADFDCF00B0E3AE /* SKAppDelegate.h */,
 				147D825A19ADFDCF00B0E3AE /* SKAppDelegate.m */,
 				147D825C19ADFDCF00B0E3AE /* MainMenu.xib */,
@@ -139,7 +304,10 @@
 		147D826B19ADFDCF00B0E3AE /* VKPeopleTests */ = {
 			isa = PBXGroup;
 			children = (
-				147D827119ADFDCF00B0E3AE /* VKPeopleTests.m */,
+				14281AA219BF5B0100C85B81 /* SKSettings */,
+				14162FF319BEF5BE00D5F4E6 /* SKAuth */,
+				14162FF119BEF54C00D5F4E6 /* Services */,
+				14162FF019BEF54500D5F4E6 /* Models */,
 				147D826C19ADFDCF00B0E3AE /* Supporting Files */,
 			);
 			path = VKPeopleTests;
@@ -154,6 +322,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		147D831219AE050600B0E3AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14AEDEEF19B0A59F000AFB48 /* NSDictionary+SBJSON.h */,
+				14AEDEF019B0A59F000AFB48 /* NSDictionary+SBJSON.m */,
+				147D831319AE051600B0E3AE /* PlatformAdapter.h */,
+				14F1289F19AF351E0028F807 /* SKFileFieldFormatter.h */,
+				14F128A019AF351E0028F807 /* SKFileFieldFormatter.m */,
+				14F128A619AF5C720028F807 /* NSDictionary+NSURL.h */,
+				14F128A719AF5C720028F807 /* NSDictionary+NSURL.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		147D831819AE117D00B0E3AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1450ED5719C0429100A89D82 /* SKAuth */,
+				14162FFA19BF016B00D5F4E6 /* SKCore */,
+				1450ED5A19C042B700A89D82 /* SKObservers */,
+				1450ED5919C042A600A89D82 /* SKUsersSearch */,
+				1450ED5819C0429B00A89D82 /* SKNetwork */,
+			);
+			name = Services;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		147D831F19AE30EB00B0E3AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				147D832219AE33E500B0E3AE /* SKUser.h */,
+				147D832319AE33E500B0E3AE /* SKUser.m */,
+				146CACAA19AF1C4D000BA226 /* SKSearchSettings.h */,
+				146CACAB19AF1C4D000BA226 /* SKSearchSettings.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 147D827519ADFDCF00B0E3AE /* Build configuration list for PBXNativeTarget "VKPeople" */;
 			buildPhases = (
+				D64A604A3EA849BB93638536 /* Check Pods Manifest.lock */,
 				147D824019ADFDCF00B0E3AE /* Sources */,
 				147D824119ADFDCF00B0E3AE /* Frameworks */,
 				147D824219ADFDCF00B0E3AE /* Resources */,
+				91927C5B70884A5F9CE9605F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +386,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 147D827819ADFDCF00B0E3AE /* Build configuration list for PBXNativeTarget "VKPeopleTests" */;
 			buildPhases = (
+				EE41070F4CD044708EA526F0 /* Check Pods Manifest.lock */,
 				147D826119ADFDCF00B0E3AE /* Sources */,
 				147D826219ADFDCF00B0E3AE /* Frameworks */,
 				147D826319ADFDCF00B0E3AE /* Resources */,
+				C3909CD7BD9649719A3540DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,19 +452,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14162FF919BEFCF600D5F4E6 /* auth_response.json in Resources */,
 				147D827019ADFDCF00B0E3AE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91927C5B70884A5F9CE9605F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3909CD7BD9649719A3540DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-VKPeopleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D64A604A3EA849BB93638536 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE41070F4CD044708EA526F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		147D824019ADFDCF00B0E3AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147D832419AE33E500B0E3AE /* SKUser.m in Sources */,
+				14AEDEF119B0A59F000AFB48 /* NSDictionary+SBJSON.m in Sources */,
+				14162FED19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m in Sources */,
 				147D825B19ADFDCF00B0E3AE /* SKAppDelegate.m in Sources */,
+				14F128A819AF5C720028F807 /* NSDictionary+NSURL.m in Sources */,
+				146CACAC19AF1C4D000BA226 /* SKSearchSettings.m in Sources */,
 				147D825419ADFDCF00B0E3AE /* main.m in Sources */,
+				147D831B19AE225A00B0E3AE /* SKAuth.m in Sources */,
+				14281AA019BF54CE00C85B81 /* SKCollectionViewController.m in Sources */,
+				14F128A119AF351E0028F807 /* SKFileFieldFormatter.m in Sources */,
+				146CACA819AF175A000BA226 /* SKSearchSettingsViewController.m in Sources */,
+				147D831E19AE306300B0E3AE /* SKUsersSearch.m in Sources */,
+				14162FFD19BF018A00D5F4E6 /* SKResponse.m in Sources */,
+				1416300019BF01C500D5F4E6 /* SKCore.m in Sources */,
+				14F128A419AF56D70028F807 /* SKRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +549,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147D827219ADFDCF00B0E3AE /* VKPeopleTests.m in Sources */,
+				14281AA519BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m in Sources */,
+				14162FF619BEF5F900D5F4E6 /* SKAuth_authorizeSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,12 +672,18 @@
 		};
 		147D827619ADFDCF00B0E3AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DA21A983414DEBAD128E3C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKPeople/VKPeople-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = "VKPeople/VKPeople-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,12 +691,18 @@
 		};
 		147D827719ADFDCF00B0E3AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DA21A983414DEBAD128E3C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKPeople/VKPeople-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = "VKPeople/VKPeople-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -410,6 +710,7 @@
 		};
 		147D827919ADFDCF00B0E3AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF56D45609C64C41B5005783 /* Pods-VKPeopleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VKPeople.app/Contents/MacOS/VKPeople";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -432,6 +733,7 @@
 		};
 		147D827A19ADFDCF00B0E3AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF56D45609C64C41B5005783 /* Pods-VKPeopleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VKPeople.app/Contents/MacOS/VKPeople";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -467,6 +769,7 @@
 				147D827719ADFDCF00B0E3AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		147D827819ADFDCF00B0E3AE /* Build configuration list for PBXNativeTarget "VKPeopleTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +778,7 @@
 				147D827A19ADFDCF00B0E3AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
