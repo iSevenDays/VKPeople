@@ -14,6 +14,10 @@
     return [NSString stringWithFormat:@"vk.com/%ld", (long)self.UID];
 }
 
+- (NSString *)fullName{
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+}
+
 + (JSONKeyMapper *)keyMapper{
     JSONKeyMapper *keyMapper =[JSONKeyMapper mapperFromUnderscoreCaseToCamelCase];
    //TODO: [keyMapper setValue:@"uid" forKey:@"UID"];

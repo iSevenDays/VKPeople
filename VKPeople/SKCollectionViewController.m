@@ -16,13 +16,18 @@
 {
 }
 
+- (NSArray *)users{
+    return [[SKCore usersSearch] users];
+}
+
 - (SKSearchSettings *)settings{
     return [SKCore searchSettings];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    NSLog(@"%@", self.view);
+
 }
 
 @end

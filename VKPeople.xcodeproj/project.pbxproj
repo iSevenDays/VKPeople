@@ -277,7 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				146CACA919AF175F000BA226 /* Controller */,
-				147D831F19AE30EB00B0E3AE /* Models */,
+				147D831F19AE30EB00B0E3AE /* Model */,
 				147D831819AE117D00B0E3AE /* Services */,
 				147D831219AE050600B0E3AE /* Helpers */,
 				147D825919ADFDCF00B0E3AE /* SKAppDelegate.h */,
@@ -349,7 +349,7 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		147D831F19AE30EB00B0E3AE /* Models */ = {
+		147D831F19AE30EB00B0E3AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				147D832219AE33E500B0E3AE /* SKUser.h */,
@@ -357,7 +357,7 @@
 				146CACAA19AF1C4D000BA226 /* SKSearchSettings.h */,
 				146CACAB19AF1C4D000BA226 /* SKSearchSettings.m */,
 			);
-			name = Models;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -20,6 +20,7 @@
     resp.statusCode = SKResponseStatusCodeOK;
     return resp;
 }
+
 + (SKResponse *)responseWithData:(NSData *)data error:(NSError *)error{
     return [[SKResponse alloc] initWithData:data error:error];
 }

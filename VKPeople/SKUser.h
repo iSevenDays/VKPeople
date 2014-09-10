@@ -21,4 +21,6 @@
 @property (nonatomic, assign) NSInteger    sex;
 
 - (NSString *)domainFull;
+- (NSString *)fullName;
+
 @end

@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SKCollectionViewController : NSViewController
+@interface SKCollectionViewController : NSViewController{
+    IBOutlet NSArrayController *arrayController;
+}
+
+@property (nonatomic, strong) NSArray *users;
 
 @end

@@ -8,11 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SKCore.h"
+
 @protocol SKSearchSettingsProtocol;
 @interface SKSearchSettingsViewController : NSViewController
 
 @property(nonatomic, assign) SKSearchSettings* settings;
-
 @property(nonatomic, weak) id<SKSearchSettingsProtocol> delegate;
 
 @end
