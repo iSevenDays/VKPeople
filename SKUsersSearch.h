@@ -22,9 +22,3 @@
 @property (nonatomic, weak)   id<SKUsersSearchProtocol> delegate;
 
 @end
-
-@protocol SKUsersSearchProtocol <NSObject>
-
-- (void)usersChanged;
-
-@end

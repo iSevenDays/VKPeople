@@ -13,6 +13,7 @@
 		14162FF919BEFCF600D5F4E6 /* auth_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 14162FF819BEFCF600D5F4E6 /* auth_response.json */; };
 		14162FFD19BF018A00D5F4E6 /* SKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FFC19BF018A00D5F4E6 /* SKResponse.m */; };
 		1416300019BF01C500D5F4E6 /* SKCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FFF19BF01C500D5F4E6 /* SKCore.m */; };
+		141DC3CA19C193440090DEB2 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141DC3C919C193440090DEB2 /* Quartz.framework */; };
 		14281AA019BF54CE00C85B81 /* SKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14281A9E19BF54CE00C85B81 /* SKCollectionViewController.m */; };
 		14281AA519BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */; };
 		146CACA819AF175A000BA226 /* SKSearchSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146CACA719AF175A000BA226 /* SKSearchSettingsViewController.m */; };
@@ -56,6 +57,8 @@
 		14162FFC19BF018A00D5F4E6 /* SKResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKResponse.m; path = SKCore/SKResponse.m; sourceTree = "<group>"; };
 		14162FFE19BF01C500D5F4E6 /* SKCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKCore.h; path = SKCore/SKCore.h; sourceTree = "<group>"; };
 		14162FFF19BF01C500D5F4E6 /* SKCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKCore.m; path = SKCore/SKCore.m; sourceTree = "<group>"; };
+		141DC3C919C193440090DEB2 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		141DC3CC19C199710090DEB2 /* SKUsersSearchProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKUsersSearchProtocol.h; sourceTree = "<group>"; };
 		14281A9D19BF54CE00C85B81 /* SKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCollectionViewController.h; sourceTree = "<group>"; };
 		14281A9E19BF54CE00C85B81 /* SKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCollectionViewController.m; sourceTree = "<group>"; };
 		14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKSettings_settingsPropertiesSpec.m; path = SKSettings/SKSettings_settingsPropertiesSpec.m; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141DC3CA19C193440090DEB2 /* Quartz.framework in Frameworks */,
 				147D824819ADFDCF00B0E3AE /* Cocoa.framework in Frameworks */,
 				8E536CB90E7E4CC39BCF242E /* libPods.a in Frameworks */,
 			);
@@ -171,6 +175,14 @@
 				14162FFF19BF01C500D5F4E6 /* SKCore.m */,
 			);
 			name = SKCore;
+			sourceTree = "<group>";
+		};
+		141DC3CB19C199630090DEB2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				141DC3CC19C199710090DEB2 /* SKUsersSearchProtocol.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		14281AA219BF5B0100C85B81 /* SKSettings */ = {
@@ -254,6 +266,7 @@
 		147D824619ADFDCF00B0E3AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				141DC3C919C193440090DEB2 /* Quartz.framework */,
 				147D824719ADFDCF00B0E3AE /* Cocoa.framework */,
 				147D826619ADFDCF00B0E3AE /* XCTest.framework */,
 				147D824919ADFDCF00B0E3AE /* Other Frameworks */,
@@ -276,6 +289,7 @@
 		147D824D19ADFDCF00B0E3AE /* VKPeople */ = {
 			isa = PBXGroup;
 			children = (
+				141DC3CB19C199630090DEB2 /* Protocols */,
 				146CACA919AF175F000BA226 /* Controller */,
 				147D831F19AE30EB00B0E3AE /* Model */,
 				147D831819AE117D00B0E3AE /* Services */,

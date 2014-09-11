@@ -26,4 +26,23 @@
     return keyMapper;
 }
 
+/* required methods of the IKImageBrowserItem protocol */
+#pragma mark -
+#pragma mark item data source protocol
+
+/* let the image browser knows we use a path representation */
+- (NSString *)imageRepresentationType{
+    return IKImageBrowserNSDataRepresentationType;
+}
+
+/* give our representation to the image browser */
+- (id)imageRepresentation{
+    return self.previewImageData;
+}
+
+/* use the absolute filepath as identifier */
+- (NSString *)imageUID{
+    return [@(self.UID) stringValue];
+}
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "JSONModel.h"
+#import <Quartz/Quartz.h>
 
 @interface SKUser : JSONModel
 
@@ -20,9 +21,14 @@
 /// 1 = woman, 2 = man, 0 = undefined
 @property (nonatomic, assign) NSInteger    sex;
 
-@property (nonatomic, strong) SKImage<Ignore>*      previewImage;
+@property (nonatomic, strong) NSData<Ignore>*      previewImageData;
 
 - (NSString *)domainFull;
 - (NSString *)fullName;
+
+/* required methods of the IKImageBrowserItem protocol */
+- (NSString *)imageRepresentationType;
+- (id)imageRepresentation;
+- (NSString *)imageUID;
 
 @end

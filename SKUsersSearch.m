@@ -7,6 +7,7 @@
 //
 
 #import "SKUsersSearch.h"
+#import "SKUsersSearchProtocol.h"
 
 @implementation SKUsersSearch
 {
@@ -39,9 +40,11 @@
             SKUser *vkUser = [[SKUser alloc] initWithDictionary:dic error:&error];
             if( vkUser != nil ){
                 
-                dispatch_async(dispatch_queue_create("getAsyncImage", NULL), ^{
-                    SKImage *image = [[SKImage alloc] initWithContentsOfURL:[NSURL URLWithString:vkUser.photoMax]];
-                    vkUser.previewImage = image;
+                dispatch_async(dispatch_queue_create("aaa", NULL), ^{
+                    NSString *imageToLoad = vkUser.photo400Orig != nil? vkUser.photo400Orig :vkUser.photoMax;
+                    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageToLoad]];
+                    
+                    vkUser.previewImageData = imageData;
                 });
                 
                 [users addObject:vkUser];

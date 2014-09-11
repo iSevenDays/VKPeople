@@ -8,12 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SKUser.h"
+#import "SKUsersSearchProtocol.h"
 
+@protocol SKCollectionViewDataSourceProtocol;
 
 @interface SKCollectionViewController : NSViewController<SKUsersSearchProtocol>{
     IBOutlet NSArrayController *arrayController;
+    IBOutlet IKImageBrowserView *imageBrowser;
 }
 
 @property (nonatomic, strong) NSArray *users;
+
+- (IBAction)zoomSliderDidChange:(id)sender;
 
 @end
