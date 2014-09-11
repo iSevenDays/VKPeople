@@ -25,4 +25,5 @@
     [keyMapper.toModelMap setValue:@"UID" forKey:@"uid"];
     return keyMapper;
 }
+
 @end

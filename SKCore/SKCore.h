@@ -23,5 +23,4 @@
 + (SKSearchSettings *)searchSettings;
 + (SKSearchSettingsObserver *)searchSettingsObserver;
 
-
 @end

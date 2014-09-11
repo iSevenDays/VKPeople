@@ -13,6 +13,7 @@
 @interface SKSearchSettingsViewController : NSViewController{
     IBOutlet NSButton *autoLoadSearchResults;
 }
+
 @property(nonatomic, assign) SKSearchSettings* settings;
 @property(nonatomic, weak) id<SKSearchSettingsProtocol> delegate;
 

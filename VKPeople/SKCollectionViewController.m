@@ -8,9 +8,6 @@
 
 #import "SKCollectionViewController.h"
 
-@interface SKCollectionViewController ()
-
-@end
 
 @implementation SKCollectionViewController
 {

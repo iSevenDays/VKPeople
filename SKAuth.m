@@ -15,7 +15,6 @@
     SKErrorBlock errorBlock;
 }
 
-
 - (NSURLRequest *)authorizeWithLogin:(NSString *)login password:(NSString *)password scopes:(NSString *)scopes clientID:(NSString *)clientID clientSecret:(NSString *)clientSecret successBlock:(SKSuccessBlock)_successBlock errorBlock:(SKErrorBlock)_errorBlock{
     successBlock = _successBlock;
     errorBlock = _errorBlock;

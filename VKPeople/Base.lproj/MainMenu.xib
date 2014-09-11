@@ -928,7 +928,7 @@
             <subviews>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8jl-T9-A47">
                     <rect key="frame" x="-3" y="-3" width="106" height="106"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="Qfl-El-P5l"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="grayBezel" id="Qfl-El-P5l"/>
                     <connections>
                         <binding destination="PVO-eC-tVS" name="value" keyPath="representedObject.previewImage" id="pb2-jS-6lF"/>
                     </connections>
