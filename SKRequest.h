@@ -10,8 +10,8 @@
 
 @interface SKRequest : NSObject
 
-typedef void (^SKSuccessBlock)(SKResponse*);
-typedef void (^SKErrorBlock)(SKResponse*);
+typedef void (^SKSuccessBlock)(SKResponse *response);
+typedef void (^SKErrorBlock)(SKResponse *response);
 
 + (void)requestDataByURL:(NSString *)url successBlock:(void (^)(SKResponse *response, NSArray *objects))successBlock errorBlock:(SKErrorBlock)errorBlock;
 
