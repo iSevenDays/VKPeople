@@ -19,3 +19,16 @@ Pods/*
 !Podfile.lock
 
 build/
+iOSInjectionProject/BundleContents.h
+iOSInjectionProject/BundleContents.m
+iOSInjectionProject/InjectionBundle-Info.plist
+iOSInjectionProject/InjectionBundle-Prefix.pch
+iOSInjectionProject/InjectionBundle.xcodeproj/project.pbxproj
+iOSInjectionProject/InjectionBundle.xcodeproj/project.pbxproj.save
+OSXInjectionProject/BundleContents.h
+OSXInjectionProject/BundleContents.m
+OSXInjectionProject/InjectionBundle-Info.plist
+OSXInjectionProject/InjectionBundle-Prefix.pch
+OSXInjectionProject/InjectionBundle.xcodeproj/project.pbxproj
+OSXInjectionProject/InjectionBundle.xcodeproj/project.pbxproj.save
+OSXInjectionProject/x86_64/compile_commands.sh
