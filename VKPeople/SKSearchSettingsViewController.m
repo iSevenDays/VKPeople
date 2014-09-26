@@ -1,5 +1,5 @@
 //
-//  SKSearchSetiingsView.m
+//  SKSearchSettingsView.m
 //  VKPeople
 //
 //  Created by Anton Sokolchenko on 8/28/14.

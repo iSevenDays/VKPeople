@@ -20,8 +20,8 @@
     return [[SKCore usersSearch] users];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)awakeFromNib {
+    [super awakeFromNib];
     [imageBrowser setAnimates:YES];
     [imageBrowser setAllowsReordering:NO];
     [SKCore usersSearch].delegate = self;
