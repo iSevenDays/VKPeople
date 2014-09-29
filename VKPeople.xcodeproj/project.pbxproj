@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0F3B03E1206E4D0CB6350503 /* libPods-VKPeopleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE8004200DA48928E5E31D7 /* libPods-VKPeopleTests.a */; };
-		1409901319D445AD00B51220 /* NSObjectExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1409901019D445AD00B51220 /* NSObjectExtensions.m */; };
 		1409901419D445AD00B51220 /* NSViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1409901219D445AD00B51220 /* NSViewExtensions.m */; };
 		14162FED19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FEC19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m */; };
 		14162FF619BEF5F900D5F4E6 /* SKAuth_authorizeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FF519BEF5F900D5F4E6 /* SKAuth_authorizeSpec.m */; };
@@ -16,17 +15,16 @@
 		14162FFD19BF018A00D5F4E6 /* SKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FFC19BF018A00D5F4E6 /* SKResponse.m */; };
 		1416300019BF01C500D5F4E6 /* SKCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14162FFF19BF01C500D5F4E6 /* SKCore.m */; };
 		141DC3CA19C193440090DEB2 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141DC3C919C193440090DEB2 /* Quartz.framework */; };
-		1422CA5819D42A6800192F5B /* NSResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1422CA5719D42A6800192F5B /* NSResponder+FirstResponder.m */; };
 		1422CA5B19D42FD800192F5B /* SKRespondersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1422CA5A19D42FD800192F5B /* SKRespondersView.m */; };
 		14281AA019BF54CE00C85B81 /* SKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14281A9E19BF54CE00C85B81 /* SKCollectionViewController.m */; };
 		14281AA519BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */; };
+		14511DCA19D549FE00FFED64 /* NSResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14511DC919D549FE00FFED64 /* NSResponder+FirstResponder.m */; };
 		146CACA819AF175A000BA226 /* SKSearchSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146CACA719AF175A000BA226 /* SKSearchSettingsViewController.m */; };
 		146CACAC19AF1C4D000BA226 /* SKSearchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 146CACAB19AF1C4D000BA226 /* SKSearchSettings.m */; };
 		147D824819ADFDCF00B0E3AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147D824719ADFDCF00B0E3AE /* Cocoa.framework */; };
 		147D825219ADFDCF00B0E3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 147D825019ADFDCF00B0E3AE /* InfoPlist.strings */; };
 		147D825419ADFDCF00B0E3AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D825319ADFDCF00B0E3AE /* main.m */; };
 		147D825819ADFDCF00B0E3AE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 147D825619ADFDCF00B0E3AE /* Credits.rtf */; };
-		147D825B19ADFDCF00B0E3AE /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D825A19ADFDCF00B0E3AE /* SKAppDelegate.m */; };
 		147D825E19ADFDCF00B0E3AE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147D825C19ADFDCF00B0E3AE /* MainMenu.xib */; };
 		147D826019ADFDCF00B0E3AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147D825F19ADFDCF00B0E3AE /* Images.xcassets */; };
 		147D826719ADFDCF00B0E3AE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147D826619ADFDCF00B0E3AE /* XCTest.framework */; };
@@ -35,6 +33,8 @@
 		147D831B19AE225A00B0E3AE /* SKAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D831A19AE225A00B0E3AE /* SKAuth.m */; };
 		147D831E19AE306300B0E3AE /* SKUsersSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D831D19AE306300B0E3AE /* SKUsersSearch.m */; };
 		147D832419AE33E500B0E3AE /* SKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D832319AE33E500B0E3AE /* SKUser.m */; };
+		14A0D9B819D4554D0047DCF6 /* NSObjectExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0D9B519D4554D0047DCF6 /* NSObjectExtensions.m */; };
+		14A0D9BB19D455BE0047DCF6 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0D9BA19D455BE0047DCF6 /* SKAppDelegate.m */; };
 		14AEDEF119B0A59F000AFB48 /* NSDictionary+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEDEF019B0A59F000AFB48 /* NSDictionary+SBJSON.m */; };
 		14CB4E5319C1D89100774CEC /* SKQuickLookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CB4E5219C1D89100774CEC /* SKQuickLookController.m */; };
 		14CB4E5619C1E16600774CEC /* SKUserPicturesDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CB4E5519C1E16600774CEC /* SKUserPicturesDownloader.m */; };
@@ -55,8 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1409900F19D445AD00B51220 /* NSObjectExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectExtensions.h; sourceTree = "<group>"; };
-		1409901019D445AD00B51220 /* NSObjectExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectExtensions.m; sourceTree = "<group>"; };
 		1409901119D445AD00B51220 /* NSViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSViewExtensions.h; sourceTree = "<group>"; };
 		1409901219D445AD00B51220 /* NSViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSViewExtensions.m; sourceTree = "<group>"; };
 		14162FEB19BDCFD700D5F4E6 /* SKSearchSettingsObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSearchSettingsObserver.h; sourceTree = "<group>"; };
@@ -69,13 +67,13 @@
 		14162FFF19BF01C500D5F4E6 /* SKCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKCore.m; path = SKCore/SKCore.m; sourceTree = "<group>"; };
 		141DC3C919C193440090DEB2 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		141DC3CC19C199710090DEB2 /* SKUsersSearchProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKUsersSearchProtocol.h; sourceTree = "<group>"; };
-		1422CA5519D42A2E00192F5B /* NSResponder+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSResponder+FirstResponder.h"; sourceTree = "<group>"; };
-		1422CA5719D42A6800192F5B /* NSResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		1422CA5919D42FD800192F5B /* SKRespondersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRespondersView.h; sourceTree = "<group>"; };
 		1422CA5A19D42FD800192F5B /* SKRespondersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRespondersView.m; sourceTree = "<group>"; };
 		14281A9D19BF54CE00C85B81 /* SKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCollectionViewController.h; sourceTree = "<group>"; };
 		14281A9E19BF54CE00C85B81 /* SKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCollectionViewController.m; sourceTree = "<group>"; };
 		14281AA419BF5B2400C85B81 /* SKSettings_settingsPropertiesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKSettings_settingsPropertiesSpec.m; path = SKSettings/SKSettings_settingsPropertiesSpec.m; sourceTree = "<group>"; };
+		14511DC919D549FE00FFED64 /* NSResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSResponder+FirstResponder.m"; sourceTree = "<group>"; };
+		14511DCB19D54A0E00FFED64 /* NSResponder+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		146CACA619AF175A000BA226 /* SKSearchSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSearchSettingsViewController.h; sourceTree = "<group>"; };
 		146CACA719AF175A000BA226 /* SKSearchSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSearchSettingsViewController.m; sourceTree = "<group>"; };
 		146CACAA19AF1C4D000BA226 /* SKSearchSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSearchSettings.h; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 		147D825519ADFDCF00B0E3AE /* VKPeople-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VKPeople-Prefix.pch"; sourceTree = "<group>"; };
 		147D825719ADFDCF00B0E3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		147D825919ADFDCF00B0E3AE /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
-		147D825A19ADFDCF00B0E3AE /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
 		147D825D19ADFDCF00B0E3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		147D825F19ADFDCF00B0E3AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		147D826519ADFDCF00B0E3AE /* VKPeopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKPeopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +102,9 @@
 		147D831D19AE306300B0E3AE /* SKUsersSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKUsersSearch.m; sourceTree = "<group>"; };
 		147D832219AE33E500B0E3AE /* SKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKUser.h; sourceTree = "<group>"; };
 		147D832319AE33E500B0E3AE /* SKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKUser.m; sourceTree = "<group>"; };
+		14A0D9B419D4554D0047DCF6 /* NSObjectExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectExtensions.h; sourceTree = "<group>"; };
+		14A0D9B519D4554D0047DCF6 /* NSObjectExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectExtensions.m; sourceTree = "<group>"; };
+		14A0D9BA19D455BE0047DCF6 /* SKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
 		14AEDEEF19B0A59F000AFB48 /* NSDictionary+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SBJSON.h"; path = "../NSDictionary+SBJSON.h"; sourceTree = "<group>"; };
 		14AEDEF019B0A59F000AFB48 /* NSDictionary+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SBJSON.m"; path = "../NSDictionary+SBJSON.m"; sourceTree = "<group>"; };
 		14CB4E5119C1D89100774CEC /* SKQuickLookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKQuickLookController.h; sourceTree = "<group>"; };
@@ -316,10 +316,10 @@
 				147D831819AE117D00B0E3AE /* Services */,
 				147D831219AE050600B0E3AE /* Helpers */,
 				147D825919ADFDCF00B0E3AE /* SKAppDelegate.h */,
-				147D825A19ADFDCF00B0E3AE /* SKAppDelegate.m */,
 				147D825C19ADFDCF00B0E3AE /* MainMenu.xib */,
 				147D825F19ADFDCF00B0E3AE /* Images.xcassets */,
 				147D824E19ADFDCF00B0E3AE /* Supporting Files */,
+				14A0D9BA19D455BE0047DCF6 /* SKAppDelegate.m */,
 			);
 			path = VKPeople;
 			sourceTree = "<group>";
@@ -360,8 +360,10 @@
 		147D831219AE050600B0E3AE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				1409900F19D445AD00B51220 /* NSObjectExtensions.h */,
-				1409901019D445AD00B51220 /* NSObjectExtensions.m */,
+				14511DC919D549FE00FFED64 /* NSResponder+FirstResponder.m */,
+				14511DCB19D54A0E00FFED64 /* NSResponder+FirstResponder.h */,
+				14A0D9B419D4554D0047DCF6 /* NSObjectExtensions.h */,
+				14A0D9B519D4554D0047DCF6 /* NSObjectExtensions.m */,
 				1409901119D445AD00B51220 /* NSViewExtensions.h */,
 				1409901219D445AD00B51220 /* NSViewExtensions.m */,
 				14AEDEEF19B0A59F000AFB48 /* NSDictionary+SBJSON.h */,
@@ -371,8 +373,6 @@
 				14F128A019AF351E0028F807 /* SKFileFieldFormatter.m */,
 				14F128A619AF5C720028F807 /* NSDictionary+NSURL.h */,
 				14F128A719AF5C720028F807 /* NSDictionary+NSURL.m */,
-				1422CA5519D42A2E00192F5B /* NSResponder+FirstResponder.h */,
-				1422CA5719D42A6800192F5B /* NSResponder+FirstResponder.m */,
 				1422CA5919D42FD800192F5B /* SKRespondersView.h */,
 				1422CA5A19D42FD800192F5B /* SKRespondersView.m */,
 			);
@@ -580,14 +580,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				147D832419AE33E500B0E3AE /* SKUser.m in Sources */,
+				14511DCA19D549FE00FFED64 /* NSResponder+FirstResponder.m in Sources */,
 				14AEDEF119B0A59F000AFB48 /* NSDictionary+SBJSON.m in Sources */,
 				14162FED19BDCFD700D5F4E6 /* SKSearchSettingsObserver.m in Sources */,
 				1409901419D445AD00B51220 /* NSViewExtensions.m in Sources */,
-				147D825B19ADFDCF00B0E3AE /* SKAppDelegate.m in Sources */,
 				14F128A819AF5C720028F807 /* NSDictionary+NSURL.m in Sources */,
 				146CACAC19AF1C4D000BA226 /* SKSearchSettings.m in Sources */,
+				14A0D9B819D4554D0047DCF6 /* NSObjectExtensions.m in Sources */,
 				1422CA5B19D42FD800192F5B /* SKRespondersView.m in Sources */,
-				1409901319D445AD00B51220 /* NSObjectExtensions.m in Sources */,
 				147D825419ADFDCF00B0E3AE /* main.m in Sources */,
 				147D831B19AE225A00B0E3AE /* SKAuth.m in Sources */,
 				14281AA019BF54CE00C85B81 /* SKCollectionViewController.m in Sources */,
@@ -595,9 +595,9 @@
 				146CACA819AF175A000BA226 /* SKSearchSettingsViewController.m in Sources */,
 				147D831E19AE306300B0E3AE /* SKUsersSearch.m in Sources */,
 				14162FFD19BF018A00D5F4E6 /* SKResponse.m in Sources */,
+				14A0D9BB19D455BE0047DCF6 /* SKAppDelegate.m in Sources */,
 				14CB4E5319C1D89100774CEC /* SKQuickLookController.m in Sources */,
 				14CB4E5619C1E16600774CEC /* SKUserPicturesDownloader.m in Sources */,
-				1422CA5819D42A6800192F5B /* NSResponder+FirstResponder.m in Sources */,
 				1416300019BF01C500D5F4E6 /* SKCore.m in Sources */,
 				14F128A419AF56D70028F807 /* SKRequest.m in Sources */,
 			);
