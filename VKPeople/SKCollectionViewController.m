@@ -22,6 +22,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [imageBrowser setViewController:self];
     [imageBrowser setAnimates:YES];
     [imageBrowser setAllowsReordering:NO];
     [SKCore usersSearch].delegate = self;
