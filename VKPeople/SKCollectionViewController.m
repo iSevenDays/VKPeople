@@ -7,9 +7,13 @@
 //
 
 #import "SKCollectionViewController.h"
+#import "SKQuickLookController.h"
+#import "SKUserPicturesDownloader.h"
+#import <QuickLook/QuickLook.h>
 
 @implementation SKCollectionViewController
 {
+    NSString *selectedUserID;
 }
 
 - (SKSearchSettings *)settings{
@@ -60,6 +64,13 @@
     return [self.users count];
 }
 
+- (void)imageBrowserSelectionDidChange:(IKImageBrowserView *)aBrowser{
+    NSUInteger selectedIndex = [[aBrowser selectionIndexes] firstIndex];
+    if( selectedIndex < self.users.count){
+        SKUser *selectedUser = [self.users objectAtIndex:selectedIndex];
+        selectedUserID = [@(selectedUser.UID) stringValue];
+    }
+}
 - (id)imageBrowser:(IKImageBrowserView *)view itemAtIndex:(NSUInteger)index{
     return [self.users objectAtIndex:index];
 }
@@ -82,6 +93,41 @@
 - (CGFloat)splitView:(NSSplitView *)sender
 constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset{
     return 0;
+}
+
+#pragma mark -
+#pragma mark Key Events
+
+- (BOOL)acceptsFirstResponder{
+    return YES;
+}
+
+- (void)keyDown:(NSEvent *)theEvent{
+    const unsigned short spaceBarKeyCode = 49;
+    if( theEvent.keyCode != spaceBarKeyCode || [QLPreviewPanel sharedPreviewPanelExists] ){
+        return;
+    }
+    
+    [SKUserPicturesDownloader downloadAvatarsWithUserID:selectedUserID successBlock:^(SKResponse *response, NSArray *userPicturesURLs) {
+        
+        SKQuickLookController *skQuickLook = [[SKQuickLookController alloc] initWithIKImageBrowserView:imageBrowser andPicturesURLsArray:userPicturesURLs];
+        
+        NSResponder *nextResponder = [self.mainWindow nextResponder];
+        [skQuickLook setNextResponder:nextResponder];
+        [self.mainWindow setNextResponder:skQuickLook];
+                
+        QLPreviewPanel *previewPanel = [QLPreviewPanel sharedPreviewPanel];
+        
+        [previewPanel makeKeyAndOrderFront:nil];
+        
+        previewPanel.dataSource = skQuickLook;
+        previewPanel.delegate = skQuickLook;
+        
+        [previewPanel reloadData];
+        
+    } errorBlock:^(SKResponse *response) {
+        
+    }];
 }
 
 @end

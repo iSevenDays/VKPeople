@@ -16,7 +16,7 @@
 }
 - (instancetype)init __attribute__((unavailable("use initWithIKImageBrowserView:")));
 
-- (instancetype)initWithIKImageBrowserView:(IKImageBrowserView *)imBrowserView;
+- (instancetype)initWithIKImageBrowserView:(IKImageBrowserView *)imBrowserView andPicturesURLsArray:(NSArray *)picturesURLs;
 - (void)setPicturesURLs:(NSArray *)picturesURLs;
 
 @end

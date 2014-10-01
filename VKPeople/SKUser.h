@@ -11,7 +11,7 @@
 
 @interface SKUser : JSONModel
 
-@property (nonatomic, assign) NSInteger    UID;
+@property (nonatomic, assign) NSUInteger    UID;
 @property (nonatomic, strong) NSString*    firstName;
 @property (nonatomic, strong) NSString*    lastName;
 @property (nonatomic, strong) NSString<Optional>*    photo400Orig;

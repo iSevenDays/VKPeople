@@ -16,10 +16,10 @@
     QLPreviewPanel *_panel;
 }
 
-- (instancetype)initWithIKImageBrowserView:(IKImageBrowserView *)imBrowserView{
+- (instancetype)initWithIKImageBrowserView:(IKImageBrowserView *)imBrowserView andPicturesURLsArray:(NSArray *)picturesURLs{
     self = [super init];
     if( self ){
-        pictures = [NSMutableArray array];
+        pictures = [picturesURLs mutableCopy];
         _imBrowserView = imBrowserView;
     }
     return self;
@@ -32,7 +32,7 @@
 - (void)beginPreviewPanelControl:(QLPreviewPanel *)panel{
     // This document is now responsible of the preview panel
     // It is allowed to set the delegate, data source and refresh panel.
-    _panel = panel;
+    //_panel = panel;
     panel.delegate = self;
     panel.dataSource = self;
     
@@ -44,12 +44,12 @@
     // Until the next call to -beginPreviewPanelControl: it must not
     // change the panel's delegate, data source or refresh it.
     [self resignFirstResponder];
-    _panel.delegate = nil;
-    _panel.dataSource = nil;
-    _panel = nil;
+    //_panel.delegate = nil;
+   // _panel.dataSource = nil;
+    //_panel = nil;
     
     NSLog(@"endPreviewPanelControl");
-    AntiARCRelease(self);
+   // AntiARCRelease(self);
 }
 
 - (void)setPicturesURLs:(NSArray *)picturesURLs{

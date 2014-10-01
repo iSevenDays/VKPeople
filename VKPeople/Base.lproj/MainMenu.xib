@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6206.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -21,7 +21,9 @@
             <connections>
                 <outlet property="arrayController" destination="TQS-Sn-UN4" id="wqM-Cc-awg"/>
                 <outlet property="imageBrowser" destination="HN1-cU-Tr3" id="cqj-wF-olP"/>
+                <outlet property="mainWindow" destination="QvC-M9-y7g" id="JVx-U1-bwJ"/>
                 <outlet property="view" destination="HN1-cU-Tr3" id="i32-cp-yV0"/>
+                <outlet property="zoomSlider" destination="PoK-QV-CBZ" id="Gdf-5J-NW7"/>
             </connections>
         </viewController>
         <arrayController objectClassName="SKUser" editable="NO" id="TQS-Sn-UN4">

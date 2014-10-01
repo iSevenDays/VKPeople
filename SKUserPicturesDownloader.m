@@ -11,8 +11,7 @@
 
 @implementation SKUserPicturesDownloader
 
-- (void)downloadAvatarsWithUserID:(NSString *)userID successBlock:(void(^)(SKResponse *response, NSArray *userPicturesURLs))successBlock errorBlock:(SKErrorBlock)errorBlock{
-    
++ (void)downloadAvatarsWithUserID:(NSString *)userID successBlock:(void(^)(SKResponse *response, NSArray *userPicturesURLs))successBlock errorBlock:(SKErrorBlock)errorBlock{
     NSDictionary *params = @{@"owner_id": userID,
                              @"count": @50,
                              @"rev": @1};
