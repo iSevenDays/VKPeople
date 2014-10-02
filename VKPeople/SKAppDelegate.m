@@ -10,8 +10,8 @@
 
 @implementation SKAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
-    
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+
     [SKCore forceLoad];
 }
 

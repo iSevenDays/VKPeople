@@ -12,15 +12,15 @@
 
 @protocol SKCollectionViewDataSourceProtocol;
 
-@interface SKCollectionViewController : NSViewController<SKUsersSearchProtocol>{
+@interface SKCollectionViewController : NSViewController <SKUsersSearchProtocol> {
     IBOutlet NSArrayController *arrayController;
     IBOutlet IKImageBrowserView *imageBrowser;
     IBOutlet NSSlider *zoomSlider;
 }
 
 
-@property (nonatomic, weak) IBOutlet NSWindow *mainWindow;
-@property (nonatomic, strong) NSArray *users;
+@property(nonatomic, weak) IBOutlet NSWindow *mainWindow;
+@property(nonatomic, strong) NSArray *users;
 
 - (IBAction)zoomSliderDidChange:(id)sender;
 

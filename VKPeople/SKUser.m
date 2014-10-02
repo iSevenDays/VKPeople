@@ -6,21 +6,19 @@
 //  Copyright (c) 2014 AntonSokolchenko. All rights reserved.
 //
 
-#import "SKUser.h"
-
 @implementation SKUser
 
-- (NSString *)domainFull{
-    return [NSString stringWithFormat:@"vk.com/%ld", (long)self.UID];
+- (NSString *)domainFull {
+    return [NSString stringWithFormat:@"vk.com/%ld", (long) self.UID];
 }
 
-- (NSString *)fullName{
+- (NSString *)fullName {
     return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
-+ (JSONKeyMapper *)keyMapper{
-    JSONKeyMapper *keyMapper =[JSONKeyMapper mapperFromUnderscoreCaseToCamelCase];
-   //TODO: [keyMapper setValue:@"uid" forKey:@"UID"];
++ (JSONKeyMapper *)keyMapper {
+    JSONKeyMapper *keyMapper = [JSONKeyMapper mapperFromUnderscoreCaseToCamelCase];
+    //TODO: [keyMapper setValue:@"uid" forKey:@"UID"];
     [keyMapper.toJSONMap setValue:@"uid" forKey:@"UID"];
     [keyMapper.toModelMap setValue:@"UID" forKey:@"uid"];
     return keyMapper;
@@ -31,17 +29,17 @@
 #pragma mark item data source protocol
 
 /* let the image browser knows we use a path representation */
-- (NSString *)imageRepresentationType{
+- (NSString *)imageRepresentationType {
     return IKImageBrowserNSDataRepresentationType;
 }
 
 /* give our representation to the image browser */
-- (id)imageRepresentation{
+- (id)imageRepresentation {
     return self.previewImageData;
 }
 
 /* use the absolute filepath as identifier */
-- (NSString *)imageUID{
+- (NSString *)imageUID {
     return [@(self.UID) stringValue];
 }
 

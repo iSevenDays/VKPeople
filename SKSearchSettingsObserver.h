@@ -12,7 +12,7 @@
 
 @interface SKSearchSettingsObserver : NSObject
 
-@property (nonatomic, weak) id<SKSearchSettingsObserverProtocol> delegate;
+@property(nonatomic, weak) id <SKSearchSettingsObserverProtocol> delegate;
 
 @end
 

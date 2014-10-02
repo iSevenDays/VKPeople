@@ -19,8 +19,11 @@
 + (void)forceLoad;
 
 + (SKAuth *)auth;
+
 + (SKUsersSearch *)usersSearch;
+
 + (SKSearchSettings *)searchSettings;
+
 + (SKSearchSettingsObserver *)searchSettingsObserver;
 
 @end

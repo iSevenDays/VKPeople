@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 AntonSokolchenko. All rights reserved.
 //
 
-#import "SKSearchSettings.h"
-
 @implementation SKSearchSettings
 
 @end

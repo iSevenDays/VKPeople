@@ -6,18 +6,16 @@
 //  Copyright (c) 2014 AntonSokolchenko. All rights reserved.
 //
 
-#import "SKCore.h"
-
 @implementation SKCore
 
-+ (void)forceLoad{
++ (void)forceLoad {
     [self auth];
     [self usersSearch];
     [self searchSettings];
     [self searchSettingsObserver];
 }
 
-+ (SKAuth *)auth{
++ (SKAuth *)auth {
     static SKAuth *auth = nil;
     if( auth == nil ){
         auth = [[SKAuth alloc] init];
@@ -25,7 +23,7 @@
     return auth;
 }
 
-+ (SKUsersSearch *)usersSearch{
++ (SKUsersSearch *)usersSearch {
     static SKUsersSearch *usersSearch = nil;
     if( usersSearch == nil ){
         usersSearch = [[SKUsersSearch alloc] init];
@@ -34,15 +32,15 @@
     return usersSearch;
 }
 
-+ (SKSearchSettings *)searchSettings{
-	static SKSearchSettings *searchSettings = nil;
++ (SKSearchSettings *)searchSettings {
+    static SKSearchSettings *searchSettings = nil;
     if( searchSettings == nil ){
         searchSettings = [[SKSearchSettings alloc] init];
     }
     return searchSettings;
 }
 
-+ (SKSearchSettingsObserver *)searchSettingsObserver{
++ (SKSearchSettingsObserver *)searchSettingsObserver {
     static SKSearchSettingsObserver *searchSettingsObserver = nil;
     if( searchSettingsObserver == nil ){
         searchSettingsObserver = [[SKSearchSettingsObserver alloc] init];

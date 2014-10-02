@@ -10,13 +10,13 @@
 #import <Quartz/Quartz.h>
 #import <QuickLook/QuickLook.h>
 
-@interface SKQuickLookController : NSResponder<QLPreviewPanelDataSource, QLPreviewPanelDelegate>
-{
+@interface SKQuickLookController : NSResponder <QLPreviewPanelDataSource, QLPreviewPanelDelegate> {
     NSMutableArray *pictures;
 }
 - (instancetype)init __attribute__((unavailable("use initWithIKImageBrowserView:")));
 
 - (instancetype)initWithIKImageBrowserView:(IKImageBrowserView *)imBrowserView andPicturesURLsArray:(NSArray *)picturesURLs;
+
 - (void)setPicturesURLs:(NSArray *)picturesURLs;
 
 @end

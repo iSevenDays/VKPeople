@@ -9,18 +9,16 @@
 #import "SKCollectionViewController.h"
 #import "SKQuickLookController.h"
 #import "SKUserPicturesDownloader.h"
-#import <QuickLook/QuickLook.h>
 
-@implementation SKCollectionViewController
-{
+@implementation SKCollectionViewController {
     NSString *selectedUserID;
 }
 
-- (SKSearchSettings *)settings{
+- (SKSearchSettings *)settings {
     return [SKCore searchSettings];
 }
 
-- (NSArray *)users{
+- (NSArray *)users {
     return [[SKCore usersSearch] users];
 }
 
@@ -35,7 +33,7 @@
 #pragma mark -
 #pragma mark SKUsersSearchProtocol
 
-- (void)usersChanged{
+- (void)usersChanged {
     DLog(@"");
     [arrayController addObjects:self.users];
     [arrayController rearrangeObjects];
@@ -44,10 +42,11 @@
 
 #pragma mark -
 #pragma mark Zooming
-- (void)zoomSliderDidChange:(id)sender{
+
+- (void)zoomSliderDidChange:(id)sender {
     /* update the zoom value to scale images */
     [imageBrowser setZoomValue:[sender floatValue]];
-    
+
     /* redisplay */
     [imageBrowser setNeedsDisplay:YES];
 }
@@ -59,74 +58,76 @@
  Our datasource representation is a simple mutable array
  */
 
-- (NSUInteger)numberOfItemsInImageBrowser:(IKImageBrowserView *)view{
+- (NSUInteger)numberOfItemsInImageBrowser:(IKImageBrowserView *)view {
     /* item count to display is our datasource item count */
     return [self.users count];
 }
 
-- (void)imageBrowserSelectionDidChange:(IKImageBrowserView *)aBrowser{
+- (void)imageBrowserSelectionDidChange:(IKImageBrowserView *)aBrowser {
     NSUInteger selectedIndex = [[aBrowser selectionIndexes] firstIndex];
-    if( selectedIndex < self.users.count){
+    if( selectedIndex < self.users.count ){
         SKUser *selectedUser = [self.users objectAtIndex:selectedIndex];
         selectedUserID = [@(selectedUser.UID) stringValue];
     }
 }
-- (id)imageBrowser:(IKImageBrowserView *)view itemAtIndex:(NSUInteger)index{
+
+- (id)imageBrowser:(IKImageBrowserView *)view itemAtIndex:(NSUInteger)index {
     return [self.users objectAtIndex:index];
 }
 
-- (BOOL)isSelectable{
+- (BOOL)isSelectable {
     return YES;
 }
 
-- (void)magnifyWithEvent:(NSEvent *)event{
+- (void)magnifyWithEvent:(NSEvent *)event {
     double magnification = [event magnification];
-    if( (magnification < 0 && [imageBrowser zoomValue] < 0.12)||(magnification > 0 && [imageBrowser zoomValue] > 1.0) ){
+    if( (magnification < 0 && [imageBrowser zoomValue] < 0.12) || (magnification > 0 && [imageBrowser zoomValue] > 1.0) ){
         return;
     }
-    
+
     [imageBrowser setZoomValue:[imageBrowser zoomValue] + magnification];
 }
 
 #pragma mark -
 #pragma mark NSSplitView allow collapsing
-- (CGFloat)splitView:(NSSplitView *)sender
-constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset{
+
+- (CGFloat)  splitView:(NSSplitView *)sender
+constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset {
     return 0;
 }
 
 #pragma mark -
 #pragma mark Key Events
 
-- (BOOL)acceptsFirstResponder{
+- (BOOL)acceptsFirstResponder {
     return YES;
 }
 
-- (void)keyDown:(NSEvent *)theEvent{
+- (void)keyDown:(NSEvent *)theEvent {
     const unsigned short spaceBarKeyCode = 49;
     if( theEvent.keyCode != spaceBarKeyCode || [QLPreviewPanel sharedPreviewPanelExists] ){
         return;
     }
-    
+
     [SKUserPicturesDownloader downloadAvatarsWithUserID:selectedUserID successBlock:^(SKResponse *response, NSArray *userPicturesURLs) {
-        
+
         SKQuickLookController *skQuickLook = [[SKQuickLookController alloc] initWithIKImageBrowserView:imageBrowser andPicturesURLsArray:userPicturesURLs];
-        
+
         NSResponder *nextResponder = [self.mainWindow nextResponder];
         [skQuickLook setNextResponder:nextResponder];
         [self.mainWindow setNextResponder:skQuickLook];
-                
+
         QLPreviewPanel *previewPanel = [QLPreviewPanel sharedPreviewPanel];
-        
+
         [previewPanel makeKeyAndOrderFront:nil];
-        
+
         previewPanel.dataSource = skQuickLook;
         previewPanel.delegate = skQuickLook;
-        
+
         [previewPanel reloadData];
-        
+
     } errorBlock:^(SKResponse *response) {
-        
+
     }];
 }
 

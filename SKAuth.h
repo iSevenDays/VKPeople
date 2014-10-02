@@ -13,6 +13,6 @@
 - (NSURLRequest *)authorizeWithLogin:(NSString *)login password:(NSString *)password scopes:(NSString *)scopes clientID:(NSString *)clientID clientSecret:(NSString *)clientSecret successBlock:(void (^)(SKResponse *response))successBlock errorBlock:(SKErrorBlock)errorBlock;
 
 
-@property(readonly) NSString* accessToken;
+@property(readonly) NSString *accessToken;
 
 @end

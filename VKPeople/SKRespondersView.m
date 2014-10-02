@@ -10,33 +10,28 @@
 
 @implementation SKRespondersView
 
-- (void)setViewController:(NSViewController *)newController
-{
-    if (viewController)
-    {
+- (void)setViewController:(NSViewController *)newController {
+    if( viewController ){
         NSResponder *controllerNextResponder = [viewController nextResponder];
         [super setNextResponder:controllerNextResponder];
         [viewController setNextResponder:nil];
     }
-    
+
     viewController = newController;
-    
-    if (newController)
-    {
+
+    if( newController ){
         NSResponder *ownNextResponder = [self nextResponder];
-        [super setNextResponder: viewController];
+        [super setNextResponder:viewController];
         [viewController setNextResponder:ownNextResponder];
     }
 }
 
-- (void)setNextResponder:(NSResponder *)newNextResponder
-{
-    if (viewController)
-    {
+- (void)setNextResponder:(NSResponder *)newNextResponder {
+    if( viewController ){
         [viewController setNextResponder:newNextResponder];
         return;
     }
-    
+
     [super setNextResponder:newNextResponder];
 }
 @end

@@ -10,6 +10,6 @@
 
 @interface SKUserPicturesDownloader : NSResponder
 
-+ (void)downloadAvatarsWithUserID:(NSString *)userID successBlock:(void(^)(SKResponse *response, NSArray *userPicturesURLs))successBlock errorBlock:(SKErrorBlock)errorBlock;
++ (void)downloadAvatarsWithUserID:(NSString *)userID successBlock:(void (^)(SKResponse *response, NSArray *userPicturesURLs))successBlock errorBlock:(SKErrorBlock)errorBlock;
 
 @end

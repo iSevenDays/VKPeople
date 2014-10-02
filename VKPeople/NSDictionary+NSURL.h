@@ -10,7 +10,7 @@
 
 @interface NSDictionary (NSURL)
 
-- (NSString*) getAsQueryParams;
+- (NSString *)getAsQueryParams;
 
 + (NSDictionary *)URLQueryParameters:(NSURL *)URL;
 

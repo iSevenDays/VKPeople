@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, MaritalStatus){
-    SINGLE  = 1,
-    HAVE_SOMEONE = 2,// есть друг/есть подруга;
-    BETROTHED = 3, // помолвлен/помолвлена;
+typedef NS_ENUM(NSUInteger, MaritalStatus) {
+    SINGLE = 1,
+    HAVE_SOMEONE = 2, // есть друг/есть подруга;
+            BETROTHED = 3, // помолвлен/помолвлена;
     MARRIED = 4,
     COMPLICATED = 5,
     ACTIVELY_SEARCHING = 6,
@@ -21,11 +21,11 @@ typedef NS_ENUM(NSUInteger, MaritalStatus){
 
 @interface SKSearchSettings : NSObject
 
-@property (nonatomic, strong) NSString*     country;
-@property (nonatomic, strong) NSString*     city;
-@property (nonatomic, assign) NSUInteger    ageFrom;
-@property (nonatomic, assign) NSUInteger    ageTo;
-@property (nonatomic, assign, getter = isOnline) BOOL online;
-@property (nonatomic, assign) MaritalStatus maritalStatus;
+@property(nonatomic, strong) NSString *country;
+@property(nonatomic, strong) NSString *city;
+@property(nonatomic, assign) NSUInteger ageFrom;
+@property(nonatomic, assign) NSUInteger ageTo;
+@property(nonatomic, assign, getter = isOnline) BOOL online;
+@property(nonatomic, assign) MaritalStatus maritalStatus;
 
 @end

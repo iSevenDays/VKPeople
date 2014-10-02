@@ -13,12 +13,13 @@
 @interface SKUsersSearch : NSObject <SKSearchSettingsObserverProtocol>
 
 - (void)reset;
+
 - (void)searchWithSuccessBlock:(SKSuccessBlock)successBlock errorBlock:(SKErrorBlock)errorBlock;
 
 /// contains SKUser instances
-@property (nonatomic, strong) NSArray*      users;
-@property (nonatomic, assign) NSUInteger    offset;
-@property (nonatomic, assign) NSUInteger    countPerRequest;
-@property (nonatomic, weak)   id<SKUsersSearchProtocol> delegate;
+@property(nonatomic, strong) NSArray *users;
+@property(nonatomic, assign) NSUInteger offset;
+@property(nonatomic, assign) NSUInteger countPerRequest;
+@property(nonatomic, weak) id <SKUsersSearchProtocol> delegate;
 
 @end

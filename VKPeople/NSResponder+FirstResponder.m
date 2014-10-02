@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 AntonSokolchenko. All rights reserved.
 //
 
-#import "NSResponder+FirstResponder.h"
 static __weak id currentFirstResponder;
+
 @implementation NSResponder (FirstResponder)
 + (id)currentFirstResponder {
     currentFirstResponder = nil;
@@ -15,7 +15,7 @@ static __weak id currentFirstResponder;
     return currentFirstResponder;
 }
 
--(void)findFirstResponder:(id)sender {
+- (void)findFirstResponder:(id)sender {
     currentFirstResponder = self;
 }
 @end

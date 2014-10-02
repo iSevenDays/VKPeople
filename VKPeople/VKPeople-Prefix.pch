@@ -5,8 +5,9 @@
 //
 
 #ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-    #import "PlatformAdapter.h"
+
+#import <Cocoa/Cocoa.h>
+#import "PlatformAdapter.h"
 #import "NSDictionary+NSURL.h"
 #import "NSDictionary+SBJSON.h"
 #import "SKResponse.h"

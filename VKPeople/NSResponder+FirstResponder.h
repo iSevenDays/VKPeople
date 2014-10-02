@@ -10,7 +10,7 @@
 #define VKPeople_NSResponder_FirstResponder_h
 
 
-@interface NSResponder (FirstResponder) 
+@interface NSResponder (FirstResponder)
 
 + (id)currentFirstResponder;
 
