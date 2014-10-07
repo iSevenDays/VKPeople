@@ -24,7 +24,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     if( [autoLoadSearchResults isEnabled]){
-        [[SKCore auth] authorizeWithLogin:@"wsevendays@gmail.com" password:@"wSevendays" scopes:@"friends,messages,status,groups,offline" clientID:@"2412525" clientSecret:@"C6HOa36AXUXK4rOzuQ57" successBlock:^(SKResponse *response){
+        [[SKCore auth] authorizeWithLogin:@"" password:@"" scopes:@"friends,messages,status,groups,offline" clientID:@"" clientSecret:@"" successBlock:^(SKResponse *response){
             [[SKCore usersSearch] searchWithSuccessBlock:nil errorBlock:nil];
         } errorBlock:^(SKResponse *response) {
             DLog(@"Error: %@", response.error);
